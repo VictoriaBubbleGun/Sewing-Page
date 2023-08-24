@@ -9,6 +9,7 @@
 }
 
 .container {
+  background-color: var(--second-color);
   max-width: 1400px;
   margin: auto;
   font-family: "EB Garamond", serif;
@@ -60,7 +61,58 @@ header a {
   border-radius: 3px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 footer {
+  color: var(--first-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(footerimg.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-right: 20px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: var(--first-color);
+  opacity: 0.7;
+  text-decoration: none;
+  transition: all 5ms ease-in-out;
+}
+footer a:hover {
   color: var(--fourth-color);
 }
 
