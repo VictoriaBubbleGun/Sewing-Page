@@ -1,0 +1,81 @@
+:root {
+  --first-color: #f5e1da;
+
+  --second-color: #f1f1f1;
+
+  --third-color: #49beb7;
+
+  --fourth-color: #085f63;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  font-family: "EB Garamond", serif;
+  text-align: center;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(thread.jpg);
+  background-size: cover;
+  padding: 150px;
+}
+h1 {
+  color: var(--first-color);
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+h2 {
+  color: var(--first-color);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 10px;
+}
+
+h3 {
+  color: var(--first-color);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--third-color);
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-flex;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: var(--second-color);
+  justify-content: center;
+  border-radius: 3px;
+}
+
+footer {
+  color: var(--fourth-color);
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 70px;
+  }
+  header h1 {
+    font-size: 40px;
+    margin: 10px;
+  }
+  header h2 {
+    font-size: 25px;
+  }
+  header h3 {
+    font-size: 18px;
+  }
+}
