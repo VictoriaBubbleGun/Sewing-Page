@@ -80,7 +80,7 @@ section.secondary {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   border-radius: 3px;
 }
 
@@ -97,6 +97,7 @@ section.secondary {
 }
 
 .grid-3-columns {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -158,7 +159,15 @@ main p {
   background-color: var(--fourth-color);
   text-decoration: none;
 }
-
+.video-section {
+  padding: 20px 30px;
+  grid-gap: 30px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+}
 footer {
   color: var(--first-color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -221,7 +230,11 @@ footer a:hover {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
-
+  .video-section {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+  }
   section {
     padding: 30px;
   }
